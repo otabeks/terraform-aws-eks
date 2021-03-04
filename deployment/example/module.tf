@@ -1,5 +1,5 @@
 module "cluster-eks" {
-  source = "../../"
+  source = "fuchicorp/eks/aws"
   subnet_ids = ["", ""]
   region = "us-east-1"
   ssh_key_location = "${file("~/.ssh/id_rsa.pub")}"
